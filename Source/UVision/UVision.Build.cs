@@ -1,15 +1,13 @@
-// Copyright 1998-2016 Epic Games, Inc. All Rights Reserved.
-
 using UnrealBuildTool;
 
-public class UnrealVision : ModuleRules
+public class UVision : ModuleRules
 {
-	public UnrealVision(TargetInfo Target)
+	public UVision(TargetInfo Target)
 	{
 		
 		PublicIncludePaths.AddRange(
 			new string[] {
-				"UnrealVision/Public"
+				"UVision/Public"
 				// ... add public include paths required here ...
 			}
 			);
@@ -17,7 +15,7 @@ public class UnrealVision : ModuleRules
 		
 		PrivateIncludePaths.AddRange(
 			new string[] {
-				"UnrealVision/Private",
+				"UVision/Private",
 				// ... add other private include paths required here ...
 			}
 			);

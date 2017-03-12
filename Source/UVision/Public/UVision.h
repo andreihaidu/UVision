@@ -1,11 +1,9 @@
-// Copyright 1998-2016 Epic Games, Inc. All Rights Reserved.
-
 #pragma once
 
 #include "ModuleManager.h"
 #include "Engine.h"
 
-class FUnrealVisionModule : public IModuleInterface
+class FUVisionModule : public IModuleInterface
 {
 public:
 
@@ -16,9 +14,9 @@ public:
 
 #include <string>
 
-DECLARE_LOG_CATEGORY_EXTERN(UnrealVisionLog, Log, All);
+DECLARE_LOG_CATEGORY_EXTERN(UVisionLog, Log, All);
 
-#define OUT_AUX(LEVEL, MSG, ...) UE_LOG(UnrealVisionLog, LEVEL, TEXT("[%s][%d] " MSG), ##__VA_ARGS__)
+#define OUT_AUX(LEVEL, MSG, ...) UE_LOG(UVisionLog, LEVEL, TEXT("[%s][%d] " MSG), ##__VA_ARGS__)
 
 #define OUT_DEBUG(MSG, ...) OUT_AUX(Display, MSG, ANSI_TO_TCHAR(__FUNCTION__), __LINE__, ##__VA_ARGS__)
 #define OUT_INFO(MSG, ...)  OUT_AUX(Display, MSG, ANSI_TO_TCHAR(__FUNCTION__), __LINE__, ##__VA_ARGS__)
